@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            height: 1200px;
+            background: hotpink;
+        }
+
+        /*超小设备*/
+        .container{
+            width: 100%;
+            background: green;
+        }
+
+        /*小屏*/
+        @media (min-width: 768px){
+            .container{
+                width: 750px;
+                background: red;
+            }
+        }
+
+        /*中屏*/
+        @media (min-width: 992px) {
+            .container{
+                width: 970px;
+                background: blue;
+            }
+        }
+
+        /*大屏*/
+        @media (min-width: 1200px) {
+            .container{
+                width: 1170px;
+                background: pink;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 去查询当前设备的屏幕宽度  根据屏幕的宽度去做对应事情 -->
+<!--
+1.当你是超小屏设备的时候     宽度100%  背景颜色绿色     768px以下
+2.当你是小屏设备的时候       宽度750px  背景颜色红色     768px-992px
+3.当你是中屏设备的时候       宽度970px  背景颜色蓝色     992px-1200px
+4.当你是大屏设备的时候       宽度1170px  背景颜色粉色     1200px以上
+-->
+<!-- 完成了4种设备的适配   响应式 -->
+<div class="container"></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+/*这样的注释是会编译在css文件当中的*/
+//这样的注释是不会编译在css文件当中
+
+//怎么定义一个变量
+//js var a = 10;
+//必须@开头
+//不能包含特殊字符
+//不能使用数字
+@mainColor:#e92322;
+
+a:hover{
+  color: @mainColor;
+}
+.wjs_icon{
+  color: @mainColor;
+}

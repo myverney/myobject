@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>+,~</title>
+    <style>
+        /* 先选择器到所有的p元素  然后找下一个兄弟元素*/
+        /*p+p{
+            color: red;
+        }*/
+        /*.now+p{
+            color: red;
+        }*/
+
+        /*先选择器到所有的p元素 让后去找下面所有的兄弟元素*/
+        /*p~p{
+            color: red;
+        }*/
+        .now ~ p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p>1</p>
+<p>2</p>
+<p class="now">3</p>
+<p>4</p>
+<p>5</p>
+</body>
+</html>

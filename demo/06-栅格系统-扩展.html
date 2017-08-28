@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>基本模版</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            height: 200px;
+            background: hotpink;
+        }
+        .container > .row {
+            height: 50px;
+            background: green;
+        }
+        .container > .row > div{
+            height: 25px;
+            background: pink;
+            border: 1px solid #000;
+        }
+        .container > .row > div > .row > div{
+            height: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<!--
+1.当超出等份的时候  换行
+2.偏移功能： offset 左边的外边距等份
+3.嵌套功能：可以在任何元素内嵌套  有宽度
+4.排序功能：pull 拉 往前拉  push  推  往后推
+-->
+<div class="container">
+    <div class="row">
+        <div class="col-xs-1">
+            <div class="row">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-6"></div>
+            </div>
+        </div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4  col-xs-offset-3">
+            <div class="row">
+                <div class="col-xs-3 col-xs-push-9">1</div>
+                <div class="col-xs-9 col-xs-pull-3">2</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

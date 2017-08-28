@@ -1,0 +1,34 @@
+/*mixin 混入*/
+/*css选择器*/
+/*.w50{
+  width: 50px;
+  display: block;
+}
+.w60{
+  width: 60px;
+  display: block;
+}
+.f_left{
+  float: left;
+}*/
+/*css选择器混入类混入*/
+/*.w50f_left{
+  .w50();
+  .f_left();
+}
+.w60f_left{
+  .w60();
+  .f_left();
+}*/
+/*函数的概念*/
+/*当有参数的时候  但是没有定义默认参数 就一定需要传参*/
+/*当有参数的时候  有定义默认参数  都可以*/
+.w50 {
+  width: 50px;
+  display: block;
+}
+/* 函数混入  */
+.w70 {
+  width: 70px;
+  display: block;
+}

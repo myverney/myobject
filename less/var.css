@@ -1,0 +1,7 @@
+/*这样的注释是会编译在css文件当中的*/
+a:hover {
+  color: #e92322;
+}
+.wjs_icon {
+  color: #e92322;
+}

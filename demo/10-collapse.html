@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>基本模版</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .box{
+            display: none;
+            height: 200px;
+            background: hotpink;
+        }
+    </style>
+</head>
+<body>
+<!--其实就是一个按钮控制一个盒子的显示和隐藏-->
+<!--
+data-toggle="collapse" 申明是一个折叠组件   告诉bootstrap这是一个折叠组件
+data-target=".box"     指定控制的目标元素    通过选择器
+href=".box"  如是a标签 还可以通过href指定目标控制元素
+-->
+<div data-toggle="collapse" data-target=".box">div按钮</div>
+<a data-toggle="collapse"  href=".box">a按钮</a>
+<button data-toggle="collapse" data-target="#box">button按钮</button>
+
+<div class="box" id="box"></div>
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

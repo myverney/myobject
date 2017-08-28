@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>基本模版</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .container{
+            height: 200px;
+            background: hotpink;
+        }
+        .container > .row{
+            height: 50px;
+            background: green;
+        }
+        .container > .self{
+            height: 50px;
+            background: blue;
+        }
+        .container > .row > div{
+            height: 25px;
+            background: pink;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<!--栅格系统-->
+
+<!--
+1.要求  大屏设备：一行平均分成三列
+
+col-*-*
+
+col 是列
+
+参数一：在什么设备下生效
+lg: 在大屏设备（以上）生效
+md: 在中屏设备（以上）生效
+sm: 在小屏设备（以上）生效
+xs: 在超小屏设备（以上）生效
+
+参数二：占多少份   把一行默认分了12份
+
+当前元素占12份当中的几份
+
+-->
+<div class="container">
+    <!--百分比的宽度是基于父容器的内容-->
+    <div class="self"></div>
+    <!--可以填充父容器的内边距 含义是行的意思  （margin-left:-15px margin-right:-15px）两侧拉伸-->
+    <div class="row">
+        <div class="col-xs-4"></div>
+        <div class="col-xs-4"></div>
+        <div class="col-xs-5"></div>
+    </div>
+</div>
+
+<script src="../lib/jquery/jquery.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

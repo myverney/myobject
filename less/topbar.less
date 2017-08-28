@@ -1,0 +1,25 @@
+.wjs_topBar{
+  width: 100%;
+  ul{
+    list-style: none;
+    li{
+      float: left;
+      width: 25%;
+      a{
+        display: block;
+        .wjs_icon{
+          color: @mainColor;
+        }
+        &:hover{
+          color: #333;
+        }
+        &::before{
+          content: '你好';
+        }
+        > span{
+          color: red;
+        }
+      }
+    }
+  }
+}
